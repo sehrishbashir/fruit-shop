@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Fruit Shop Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="text">
+        Mithas Ka Khazana
+      </div>
+    </header>
+
+    <section>
+      <h2>
+        I have Rs.
+        <input type="number" id="wallet" />
+      </h2>
+      <div class="glow">
+        <h1>Your total is Rs.</h1>
+        <span id="totalbill"></span>
+      </div>
+    </section>
+    
+    <main>
+      <div id="items">
+
+        <div class="options">
+          <h3>Rs.10</h3>
+          <figure class="image"> </figure>
+          <figcaption>Strawberry Milkshake</figcaption>
+          <div id="input_div">
+            <button value="-" id="minus" onclick="minusMilkShake1()">-</button>
+            <input type="text" value="" id="noOfStrawMilkShake" />
+            <button value="+" id="plus" onclick="plusMilkShake1()">+</button>
+          </div>
+        </div>
+
+        <div class="options">
+          <h3>Rs.15</h3>
+          <figure class="image1"> </figure>
+            <figcaption>Blossom IceCream</figcaption>
+          <div id="input_div">
+            <button value="-" id="minus" onclick="minusCream()">-</button>
+            <input type="text" value="" id="noOfBlossom" />
+            <button value="+" id="plus" onclick="plusCream()">+</button>
+          </div>
+        </div>
+
+        <div class="options">
+          <h3>Rs.7</h3>
+          <figure class="image2"> </figure>
+          <figcaption>Neem Mint Milkshake</figcaption>
+          <div id="input_div">
+            <button value="-" id="minus" onclick="minusMilkShake2()">-</button>
+            <input type="text" value="" id="noOfNeemShake" />
+            <button value="+" id="plus" onclick="plusMilkShake2()">+</button>
+          </div>
+        </div>
+
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
